@@ -1,0 +1,16 @@
+
+<form (ngSubmit)="signin()">
+    <legend>Login Here</legend>
+
+    <div class="form-group">
+        <label for="uname">UserName</label>
+        <input ngModel type="text" class="form-control" id="uname" name="uname" placeholder="Enter uname" [(ngModel)]="credentials.uname">
+    </div>
+
+    <div class="form-group">
+        <label for="password">password</label>
+        <input ngModel type="text" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)]="credentials.password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
